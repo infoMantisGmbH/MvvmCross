@@ -119,6 +119,8 @@ namespace Cirrious.MvvmCross.Plugins.File
 
         public abstract bool TryMove(string from, string to, bool deleteExistingTo);
 
+		public abstract bool TryCopy(string from, string to, bool overwriteExistingTo);
+
         public abstract string NativePath(string path);
 
         #endregion
